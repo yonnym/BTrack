@@ -6,6 +6,7 @@ set (CMAKE_CXX_STANDARD 11)
 option (BUILD_TESTS "Build tests" OFF)
 
 add_subdirectory (src)
+find_library(LIBSAMPLERATE_LIBRARES NAMES samplerate libsamplerate-0)
 
 if (BUILD_TESTS)
     enable_testing()
